@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color game !</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="welcome">
+      <i id="x">×</i>   
+      <div class="welcome-text">
+        <p id="header-text">Welcome to color guessing game!</p>
+        <p id="rules">Rules: </p>
+        <div class="welcome-text-p">
+        <p id="you">-You have 3 attempts.</p>
+        <p id="find">-Find which color is from the color shown.</p>
+        <p id="you">-If you find the color correctly, the background will change.</p>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+    <header id="header">
+        <p id="score">Score : </p>
+        <h1 id="color"></h1>
+    </header>
+    <section>
+        <div class="status">
+        <span id="status">Your status: </span>
+        <p id="attemp">Attemp : </p>
+        </div>
+        <div class="color-box">
+            <div id="box1"></div>
+            <div id="box2"></div>
+            <div id="box3"></div>
+            <div id="box4"></div>
+        </div>
+        <div class="button">
+        <button id="refresh">Refresh</button>
+        </div>
+    </section>
+</div>
+</body>
+<script src="script.js"></script>
+</html>

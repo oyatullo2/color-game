@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;    
+    font-family: "Red Hat Display", sans-serif;
+}
+body{
+    background-color: rgb(245, 244, 244);
+}
+.main{
+    display: none;
+    transition: all .5s ease;
+}
+.welcome{
+    display: flex;
+    justify-content: center;    
+    background-color: #5FB9E8FF;
+    height: 320px;
+    max-width: 500px;
+    border-radius: 20px;
+    margin: 180px auto;
+    border: 2px solid #5FB9E8FF;
+    position: relative;
+    z-index: 10;
+    align-items: center;
+    flex-direction: column;
+}
+.welcome i{
+    font-weight: 900;
+    font-size: 22px;
+    height: 0px;
+    position: absolute;
+    top: 2px;
+    right:10px;
+    transition: all .5s ease;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.welcome i:hover{
+    color: red;
+}
+.welcome i:active{
+    color: red;
+}
+.welcome-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 100%;
+    max-height: 250px;
+    padding: 40px;
+    gap: 10px;
+    align-items: flex-start;
+    background-color: white;
+}
+.welcome #header-text{
+    font-weight: 700;
+    text-align: center;
+    margin: 0px auto;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#rules{
+    font-weight: 600;
+    font-size: 18px;
+}
+.welcome-text-p{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-weight: 450;
+    font-size: 15px;
+}
+header{
+    background-color: rgb(79, 181, 236);
+    height: 200px;
+    color: white;
+}
+#score{
+    font-weight: 600;
+    padding: 30px 0px 0px 40px;
+    font-size: 22px;
+}
+#color{
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+}
+.status{
+    display: flex;
+    color: rgb(79, 181, 236);
+    font-weight: 600;
+    max-width: 900px;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.color-box div{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+.color-box{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0px auto 70px auto;
+    padding: 0px 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+@media (max-width:875px) {
+    .color-box{
+        display: flex;
+        gap: 10px;
+        max-width: 490px;
+        margin: 50px auto 0px auto;
+        padding: 0px 20px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+}
+.button button{
+    background-color: white;
+    color: rgb(79, 181, 236);
+    border: 2px solid rgb(79, 181, 236);
+    padding: 11px 50px;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all .5s ease;
+    font-size: 25px;
+    text-align: center;
+}
+.button{
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+.button button:hover{
+    background-color: rgb(79, 181, 236);
+    border: 2px solid transparent;
+    color: white;
+}
+@media (max-width:400px) {
+    .welcome{
+        max-width: 340px;
+    }
+    #status{
+        font-size: 20px;
+        margin-left: -20px;
+    }
+    #attemp{
+        font-size: 20px;
+    }
+    #color{
+        font-size: 30px;
+    }
+    #score{
+        margin-left: -20px;
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+    header{
+        height: 150px;
+    }
+    .welcome #header-text{
+        font-weight: 700;
+        text-align: center;
+        margin: 0px auto;
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .welcome-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        width: 100%;
+        max-height: 250px;
+        padding: 30px 20px;
+        gap: 10px;
+        align-items: flex-start;
+        background-color: white;
+    }
+    #x{
+        font-weight: 900;
+        font-size: 23px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #rules{
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .welcome-text-p{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        font-weight: 450;
+        font-size: 14px;
+    }
+    .color-box div{
+        width: 150px;
+        height: 150px;
+    }
+}
